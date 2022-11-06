@@ -16,15 +16,20 @@ class BaseViewController: UIViewController {
 
         configure()
         setConstraints()
+        hideKeyboard()
        
     }
     
-    func configure() {
-        
+    func configure() { }
+    
+    func setConstraints() { }
+    
+    func hideKeyboard(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
-    func setConstraints() {
-        
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
-
 }

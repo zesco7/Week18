@@ -31,7 +31,7 @@ extension SeSACAPI {
         case .signup, .login:
             return ["Content-Type": "application/x-www-form-urlencoded"]
         case .profile:
-            return ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: "token")!)",
+            return ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: "token") ?? "초기설정값")",
             "Content-Type": "application/x-www-form-urlencoded"]
         }
     }

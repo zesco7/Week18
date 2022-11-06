@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import RxSwift
 
 class LoginViewController: BaseViewController {
     
+    let viewModel = LoginViewModel()
+    let disposeBag = DisposeBag()
     let mainView = LoginView()
     
     override func loadView() {
@@ -20,18 +23,30 @@ class LoginViewController: BaseViewController {
         
         mainView.loginButton.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
         mainView.buttonToSignup.addTarget(self, action: #selector(buttonToSignupClicked), for: .touchUpInside)
+        mainView.passwordTextField.isSecureTextEntry = true
         
     }
     
     @objc func loginButtonClicked() {
-        let vc = ProfileViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        viewModel.login
+            .withUnretained(self)
+            .subscribe { (vc, value) in
+                print(value)
+            } onError: { error in
+                print(error.localizedDescription)
+            }
+            .disposed(by: disposeBag)
+        viewModel.requestLogin(email: mainView.emailTextField.text!, password: mainView.passwordTextField.text!)
+        navigationPush()
     }
     
     @objc func buttonToSignupClicked() {
-        let vc = SignupViewController()
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
+    func navigationPush() {
+        let navi = UINavigationController(rootViewController: LoginViewController())
+        let vc = ProfileViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

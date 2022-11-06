@@ -42,17 +42,8 @@ class SignupView: BaseView {
         return view
     }()
     
-    let buttonToLogin : UIButton = {
-        let view = UIButton()
-        view.layer.backgroundColor = UIColor.systemRed.cgColor
-        view.layer.cornerRadius = 5
-        view.setTitle("로그인 돌아가기", for: .normal)
-        view.setTitleColor(UIColor.white, for: .normal)
-        return view
-    }()
-    
     override func configureUI() { //객체 등록
-        [signinTitleLabel, nameTextField, emailTextField, passwordTextField, signupButton, buttonToLogin].forEach { self.addSubview($0) }
+        [signinTitleLabel, nameTextField, emailTextField, passwordTextField, signupButton].forEach { self.addSubview($0) }
     }
     
     override func setConstraints() {
@@ -89,13 +80,6 @@ class SignupView: BaseView {
             make.trailingMargin.equalTo(-100)
             make.top.equalTo(passwordTextField.snp.bottom).offset(22)
             make.height.equalTo(33)
-        }
-        
-        buttonToLogin.snp.makeConstraints { make in
-            make.leadingMargin.equalTo(120)
-            make.trailingMargin.equalTo(-120)
-            make.top.equalTo(signupButton.snp.bottom).offset(22)
-            make.height.equalTo(22)
         }
     }
 }

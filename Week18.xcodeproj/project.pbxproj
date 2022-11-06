@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		984AAE0529133FB300CD5B4F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AAE0429133FB300CD5B4F /* LoginViewModel.swift */; };
+		984AAE0729133FBE00CD5B4F /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AAE0629133FBE00CD5B4F /* SignupViewModel.swift */; };
+		984AAE0929133FCE00CD5B4F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AAE0829133FCE00CD5B4F /* ProfileViewModel.swift */; };
+		984AAE0C291351CE00CD5B4F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AAE0B291351CE00CD5B4F /* Network.swift */; };
+		984AAE0E2913532400CD5B4F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AAE0D2913532400CD5B4F /* ViewModel.swift */; };
+		984AAE112913544100CD5B4F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 984AAE102913544100CD5B4F /* RxCocoa */; };
+		984AAE132913544100CD5B4F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 984AAE122913544100CD5B4F /* RxSwift */; };
+		984AAE15291362A000CD5B4F /* SubscriptExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AAE14291362A000CD5B4F /* SubscriptExample.swift */; };
+		989B5BCE2917A09A003F594D /* AppLaunchStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989B5BCD2917A09A003F594D /* AppLaunchStatusManager.swift */; };
 		98B48C5D2911FD60008978A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B48C5C2911FD60008978A5 /* AppDelegate.swift */; };
 		98B48C5F2911FD60008978A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B48C5E2911FD60008978A5 /* SceneDelegate.swift */; };
 		98B48C612911FD60008978A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B48C602911FD60008978A5 /* ViewController.swift */; };
@@ -28,9 +37,17 @@
 		98B48C982912C01C008978A5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B48C972912C01C008978A5 /* CustomTextField.swift */; };
 		98B48C9A2912C02B008978A5 /* CustomTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B48C992912C02B008978A5 /* CustomTitleLabel.swift */; };
 		98B48C9C2912C305008978A5 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B48C9B2912C305008978A5 /* CustomLabel.swift */; };
+		98C936C12916AE6E00D8970A /* CObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C936C02916AE6E00D8970A /* CObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		984AAE0429133FB300CD5B4F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		984AAE0629133FBE00CD5B4F /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		984AAE0829133FCE00CD5B4F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		984AAE0B291351CE00CD5B4F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		984AAE0D2913532400CD5B4F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		984AAE14291362A000CD5B4F /* SubscriptExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptExample.swift; sourceTree = "<group>"; };
+		989B5BCD2917A09A003F594D /* AppLaunchStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchStatusManager.swift; sourceTree = "<group>"; };
 		98B48C592911FD60008978A5 /* Week18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week18.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B48C5C2911FD60008978A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98B48C5E2911FD60008978A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +69,7 @@
 		98B48C972912C01C008978A5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		98B48C992912C02B008978A5 /* CustomTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleLabel.swift; sourceTree = "<group>"; };
 		98B48C9B2912C305008978A5 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		98C936C02916AE6E00D8970A /* CObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				984AAE112913544100CD5B4F /* RxCocoa in Frameworks */,
 				98B48C7229120A33008978A5 /* Alamofire in Frameworks */,
+				984AAE132913544100CD5B4F /* RxSwift in Frameworks */,
 				98B48C952912B85F008978A5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +87,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		984AAE0A29133FEB00CD5B4F /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				98C936C02916AE6E00D8970A /* CObservable.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
+		989B5BCB291770A5003F594D /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		989B5BCC2917A091003F594D /* AppLaunchStatusManager */ = {
+			isa = PBXGroup;
+			children = (
+				989B5BCD2917A09A003F594D /* AppLaunchStatusManager.swift */,
+			);
+			path = AppLaunchStatusManager;
+			sourceTree = "<group>";
+		};
 		98B48C502911FD60008978A5 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +138,8 @@
 				98B48C652911FD64008978A5 /* Assets.xcassets */,
 				98B48C672911FD64008978A5 /* LaunchScreen.storyboard */,
 				98B48C6A2911FD64008978A5 /* Info.plist */,
+				984AAE0D2913532400CD5B4F /* ViewModel.swift */,
+				984AAE14291362A000CD5B4F /* SubscriptExample.swift */,
 			);
 			path = Week18;
 			sourceTree = "<group>";
@@ -104,6 +149,7 @@
 			children = (
 				98B48C7429120F04008978A5 /* APIService.swift */,
 				98B48C7629121BF7008978A5 /* EndPoint.swift */,
+				984AAE0B291351CE00CD5B4F /* Network.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -111,6 +157,9 @@
 		98B48C782912AEB1008978A5 /* Signup,Login Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				989B5BCC2917A091003F594D /* AppLaunchStatusManager */,
+				989B5BCB291770A5003F594D /* NetworkRequest */,
+				984AAE0A29133FEB00CD5B4F /* Observable */,
 				98B48C8D2912AF9D008978A5 /* Profile */,
 				98B48C8C2912AF90008978A5 /* Signup */,
 				98B48C7F2912AF28008978A5 /* Login */,
@@ -144,6 +193,7 @@
 			children = (
 				98B48C802912AF3A008978A5 /* LoginViewController.swift */,
 				98B48C862912AF5E008978A5 /* LoginView.swift */,
+				984AAE0429133FB300CD5B4F /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -153,6 +203,7 @@
 			children = (
 				98B48C822912AF44008978A5 /* SignupViewController.swift */,
 				98B48C882912AF68008978A5 /* SignupView.swift */,
+				984AAE0629133FBE00CD5B4F /* SignupViewModel.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -162,6 +213,7 @@
 			children = (
 				98B48C842912AF52008978A5 /* ProfileViewController.swift */,
 				98B48C8A2912AF71008978A5 /* ProfileView.swift */,
+				984AAE0829133FCE00CD5B4F /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -185,6 +237,8 @@
 			packageProductDependencies = (
 				98B48C7129120A33008978A5 /* Alamofire */,
 				98B48C942912B85F008978A5 /* SnapKit */,
+				984AAE102913544100CD5B4F /* RxCocoa */,
+				984AAE122913544100CD5B4F /* RxSwift */,
 			);
 			productName = Week18;
 			productReference = 98B48C592911FD60008978A5 /* Week18.app */;
@@ -217,6 +271,7 @@
 			packageReferences = (
 				98B48C7029120A33008978A5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				98B48C932912B85F008978A5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				984AAE0F2913544100CD5B4F /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 98B48C5A2911FD60008978A5 /* Products */;
 			projectDirPath = "";
@@ -245,6 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				984AAE15291362A000CD5B4F /* SubscriptExample.swift in Sources */,
+				984AAE0729133FBE00CD5B4F /* SignupViewModel.swift in Sources */,
+				989B5BCE2917A09A003F594D /* AppLaunchStatusManager.swift in Sources */,
+				984AAE0929133FCE00CD5B4F /* ProfileViewModel.swift in Sources */,
 				98B48C982912C01C008978A5 /* CustomTextField.swift in Sources */,
 				98B48C9A2912C02B008978A5 /* CustomTitleLabel.swift in Sources */,
 				98B48C892912AF68008978A5 /* SignupView.swift in Sources */,
@@ -253,8 +312,12 @@
 				98B48C612911FD60008978A5 /* ViewController.swift in Sources */,
 				98B48C852912AF52008978A5 /* ProfileViewController.swift in Sources */,
 				98B48C9C2912C305008978A5 /* CustomLabel.swift in Sources */,
+				984AAE0C291351CE00CD5B4F /* Network.swift in Sources */,
 				98B48C5D2911FD60008978A5 /* AppDelegate.swift in Sources */,
 				98B48C7729121BF7008978A5 /* EndPoint.swift in Sources */,
+				98C936C12916AE6E00D8970A /* CObservable.swift in Sources */,
+				984AAE0E2913532400CD5B4F /* ViewModel.swift in Sources */,
+				984AAE0529133FB300CD5B4F /* LoginViewModel.swift in Sources */,
 				98B48C7529120F04008978A5 /* APIService.swift in Sources */,
 				98B48C812912AF3A008978A5 /* LoginViewController.swift in Sources */,
 				98B48C7C2912AEDD008978A5 /* BaseView.swift in Sources */,
@@ -480,6 +543,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		984AAE0F2913544100CD5B4F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		98B48C7029120A33008978A5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -499,6 +570,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		984AAE102913544100CD5B4F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 984AAE0F2913544100CD5B4F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		984AAE122913544100CD5B4F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 984AAE0F2913544100CD5B4F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		98B48C7129120A33008978A5 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 98B48C7029120A33008978A5 /* XCRemoteSwiftPackageReference "Alamofire" */;

@@ -21,9 +21,9 @@ class ProfileView: BaseView {
         return view
     }()
     
-    let passwordLabel : CustomLabel = {
+    let nameLabel : CustomLabel = {
         let view = CustomLabel()
-        view.text = "비밀번호"
+        view.text = "이름"
         return view
     }()
     
@@ -37,7 +37,7 @@ class ProfileView: BaseView {
     }()
     
     override func configureUI() { //객체 등록
-        [profileTitleLabel, emailLabel, passwordLabel, logoutButton].forEach { self.addSubview($0) }
+        [profileTitleLabel, emailLabel, nameLabel, logoutButton].forEach { self.addSubview($0) }
     }
     
     override func setConstraints() {
@@ -48,24 +48,24 @@ class ProfileView: BaseView {
             make.centerY.equalTo(100)
         }
         
-        emailLabel.snp.makeConstraints { make in
+        nameLabel.snp.makeConstraints { make in
             make.leadingMargin.equalTo(50)
             make.trailingMargin.equalTo(-50)
             make.top.equalTo(profileTitleLabel.snp.bottom).offset(80)
             make.height.equalTo(44)
         }
         
-        passwordLabel.snp.makeConstraints { make in
+        emailLabel.snp.makeConstraints { make in
             make.leadingMargin.equalTo(50)
             make.trailingMargin.equalTo(-50)
-            make.top.equalTo(emailLabel.snp.bottom).offset(22)
+            make.top.equalTo(nameLabel.snp.bottom).offset(22)
             make.height.equalTo(44)
         }
         
         logoutButton.snp.makeConstraints { make in
             make.leadingMargin.equalTo(100)
             make.trailingMargin.equalTo(-100)
-            make.top.equalTo(passwordLabel.snp.bottom).offset(22)
+            make.top.equalTo(emailLabel.snp.bottom).offset(22)
             make.height.equalTo(33)
         }
     }
